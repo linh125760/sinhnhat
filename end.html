@@ -1,0 +1,47 @@
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+	.mySlides {
+		display: none;
+	}
+	img {
+		border-radius: 10%;
+	}
+</style>
+
+<div
+	style="font-family: 'Amatic SC', cursive;top:650px;color: white; z-index: 9999; text-align: center; font-weight: 700; font-size: 25px;">
+	Trang cuối rồi :> Một lần nữa chúc Em sinh nhật vui vẻ :3
+</div>
+
+<div class="w3-content" style="max-width:400px">
+	<img class="mySlides" src="images/1.jpg" style="width:100%">
+	<img class="mySlides" src="images/2.jpg" style="width:100%">
+	<img class="mySlides" src="images/3.jpg" style="width:100%">
+	<img class="mySlides" src="images/4.jpg" style="width:100%">
+	<img class="mySlides" src="images/5.jpg" style="width:100%">
+	<img class="mySlides" src="images/6.jpg" style="width:100%">
+	<img class="mySlides" src="images/7.jpg" style="width:100%">
+	<img class="mySlides" src="images/8.jpg" style="width:100%">
+	<img class="mySlides" src="images/9.jpg" style="width:100%">
+	<img class="mySlides" src="images/10.jpg" style="width:100%">
+</div>
+
+
+<script>
+	var slideIndex = 0;
+	carousel();
+	
+	function carousel() {
+	  var i;
+	  var x = document.getElementsByClassName("mySlides");
+	  for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none"; 
+	  }
+	  slideIndex++;
+	  if (slideIndex > x.length) {slideIndex = 1} 
+	  x[slideIndex-1].style.display = "block"; 
+	  setTimeout(carousel, 2000); 
+	}
+	</script>

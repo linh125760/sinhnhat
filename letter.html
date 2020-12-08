@@ -1,0 +1,44 @@
+<embed src="music/Just The Way You Are.mp3" loop="true" autostart="true" width="2" height="0">
+<link rel="stylesheet" href="letter.css"/>
+<body>
+<div class="card">
+    <div class="imgBox">
+        <div class="bark"></div>
+        <img src="images/lastofus.png">
+    </div>
+    <div class="details">
+        <h4 class="color1">You are all of my life</h2>
+            <h4 class="color2 margin">(HAPPY BIRTHDAY)</h3>
+                <p>Chào Cục Cưng,</p>
+                <p>Hôm nay là sinh nhật thứ 20 của em</p>
+                <p>Anh chẳng biết làm sao em bất ngờ và Wow cả</p>
+                <p>Nên anh quyết định làm thiệp này để tặng em</p>
+                <p>Chẳng biết nói gì hơn</p>
+                <p>Tuổi 20, sắp ra trường rồi, mau ăn chóng lớn</p>
+                <p>Ra trường sẽ có được việc làm yêu thích</p>
+                <p>Và mãi bên nhau bạn nhé :3</p>
+                <p class="text-right">Chúc mừng sinh nhật em ♥ </p>
+                <p class="text-right" style="padding-right:3px;">♥ Linh</p>
+    </div>
+</div>
+<button id="handle" class="prePage" style="font-family: 'Comfortaa', cursive;position: fixed;margin: 0 auto;bottom:3%;left: 0;width: 14em; opacity: 0.8;  background-color: #1e1934;border: 2px dashed white;
+color: white;padding: 20px 15px 20px;text-align: center;text-decoration: none;font-size: 16px;margin: 4px 20px;cursor: pointer; border-radius: 5px;">
+    Muốn thổi nến tiếp :3
+</button>
+<button id="end" class="prePage" style="font-family: 'Comfortaa', cursive;position: fixed;margin: 0 auto;bottom:3%;right: 0;width: 14em; opacity: 0.8;  background-color: #1e1934;border: 2px dashed white;
+color: white;padding: 20px 15px 20px;text-align: center;text-decoration: none;font-size: 16px;margin: 4px 20px;cursor: pointer; border-radius: 5px;">
+    Chưa hết đâu ^^
+</button>
+<script>
+    $("#handle").on('click',function(){
+        $.get('index.html',function(res){
+            $('body').html(res);
+        });
+    });
+    $("#end").on('click',function(){
+        $.get('end.html',function(res){
+            $('body').html(res);
+        });
+    });
+</script>
+</body>
